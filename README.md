@@ -4,7 +4,7 @@
 
 Mandatory Features:
 
-- License plate scanning
+- License plate recognition
 - Creation of rules
   - Whitelisting and Blacklisting
   - Limits
@@ -21,11 +21,11 @@ Optional Features:
 
 ## Architecture
 
-- License Plate Scanning API
+- License Plate Recognition API
 - Backend Server
 - Frontend Web App
 
-### License Plate Scanning API
+### License Plate Recognition API
 
 Custom solution would be a project in and of itself, so a project like https://github.com/openalpr/openalpr will be used. Since it is licensed under AGPLv3, its service shall be accessible through an API whose server code must be public that is what AGPLv3 mandates.
 
@@ -48,7 +48,7 @@ Integration of services such as SMS notifications and card payments is done so t
 
 #### Dependencies
 
-- License Plate Scanning API / OpenALPR Cloud API
+- License Plate Recognition API / OpenALPR Cloud API
 
 ### Frontend Web App
 
