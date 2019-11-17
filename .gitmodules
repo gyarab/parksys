@@ -1,9 +1,12 @@
-[submodule "lpra"]
-	path = lpra
-	url = /lpra
 [submodule "backend"]
 	path = backend
 	url = /backend
 [submodule "frontend"]
 	path = frontend
 	url = /frontend
+[submodule "express-openalpr-server"]
+	path = express-openalpr-server
+	url = https://github.com/tmscer/express-openalpr-server.git
+[submodule "openalpr"]
+	path = openalpr
+	url = https://github.com/openalpr/openalpr
