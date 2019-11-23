@@ -10,3 +10,6 @@
 [submodule "openalpr"]
 	path = openalpr
 	url = https://github.com/openalpr/openalpr
+[submodule "scanner"]
+	path = scanner
+	url = git@gitlab.com:tmscer/parking-system-scanner.git
