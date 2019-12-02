@@ -1,0 +1,27 @@
+{
+  "name": "parksys",
+  "version": "1.0.0",
+  "description": "## Features",
+  "main": "index.js",
+  "scripts": {
+    "test": "bash ./test_all.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/tmscer/parking-system-code.git"
+  },
+  "author": "Tomáš Černý (tmscer@gmail.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/tmscer/parking-system-code/issues"
+  },
+  "homepage": "https://gitlab.com/tmscer/parking-system-code#readme",
+  "devDependencies": {
+    "husky": "^3.1.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test"
+    }
+  }
+}
