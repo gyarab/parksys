@@ -1,12 +1,12 @@
 [submodule "backend"]
 	path = backend
-	url = /backend
+	url = git@gitlab.com:tmscer/parking-system-backend.git
 [submodule "frontend"]
 	path = frontend
-	url = /frontend
+	url = git@gitlab.com:tmscer/parking-system-frontend.git
 [submodule "express-openalpr-server"]
 	path = express-openalpr-server
-	url = https://github.com/tmscer/express-openalpr-server.git
+	url = git@github.com:tmscer/express-openalpr-server.git
 [submodule "openalpr"]
 	path = openalpr
 	url = https://github.com/openalpr/openalpr
