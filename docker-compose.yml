@@ -1,0 +1,37 @@
+version: "3"
+services:
+  backend:
+    environment:
+      # Overriding app configuration
+      - NODE_ENV=production
+      # Config
+      - mongo__host=mongo
+      - mongo__db=prod_parksys
+      - impls__apis__lpr__expressOpenAlpr__host=openalprserver
+    build:
+      context: backend
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mongo
+      - openalprserver
+  frontend:
+    environment:
+      - NODE_ENV=production
+      - BACKEND_HOST=http://backend:8080
+      - HOST=0.0.0.0
+    build:
+      context: frontend
+    ports:
+      - "8000:8889"
+    depends_on:
+      - backend
+  openalprserver:
+    build:
+      context: express-openalpr-server
+    ports:
+      - "4500:4500"
+  mongo:
+    image: mongo
+    ports:
+      - "5432:5432"
