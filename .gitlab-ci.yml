@@ -6,6 +6,6 @@ test:
     - docker create --name alpr1 alpr:latest
     - docker start alpr1
     - npm install --prefix backend
-    - npm run --prefix compiel
+    - npm run --prefix compile
     - npm install --prefix frontend
     - bash test_all.sh
