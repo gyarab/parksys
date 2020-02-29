@@ -1,0 +1,12 @@
+test:
+  image: node:13-buster-slim
+  script:
+    - apt-get update
+    - apt-get install docker-ce docker-ce-cli containerd.io
+    - docker build -t alpr:latest ./express-openalpr-server
+    - docker create --name alpr1 alpr:latest
+    - docker start alpr1
+    - npm install --prefix backend
+    - npm run --prefix compile
+    - npm install --prefix frontend
+    - bash test_all.sh
