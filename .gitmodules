@@ -1,15 +1,15 @@
 [submodule "backend"]
 	path = backend
-	url = git@gitlab.com:tmscer/parking-system-backend.git
+	url = https://github.com/gyarab/parksys-backend
 [submodule "frontend"]
 	path = frontend
-	url = git@gitlab.com:tmscer/parking-system-frontend.git
+	url = https://github.com/gyarab/parksys-frontend
 [submodule "express-openalpr-server"]
 	path = express-openalpr-server
-	url = git@github.com:tmscer/express-openalpr-server.git
+	url = https://github.com/gyarab/parksys-openalpr-server
 [submodule "openalpr"]
 	path = openalpr
 	url = https://github.com/openalpr/openalpr
 [submodule "scanner"]
 	path = scanner
-	url = git@gitlab.com:tmscer/parking-system-scanner.git
+	url = https://github.com/gyarab/parksys-scanner
