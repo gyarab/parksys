@@ -23,7 +23,7 @@ services:
     build:
       context: frontend
     ports:
-      - "8000:8889"
+      - "8889:8889"
     depends_on:
       - backend
   openalprserver:
