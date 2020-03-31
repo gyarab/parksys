@@ -18,12 +18,12 @@ services:
   frontend:
     environment:
       - NODE_ENV=production
-      - BACKEND_HOST=http://192.168.122.88:8081
+      - BACKEND_HOST=http://localhost:8080
       - HOST=0.0.0.0
     build:
       context: frontend
     ports:
-      - "8000:8889"
+      - "8889:8889"
     depends_on:
       - backend
   openalprserver:
