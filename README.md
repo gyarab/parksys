@@ -2,8 +2,6 @@
 
 ## Features
 
-Features:
-
 - License plate recognition
 - Creation of rules
   - Whitelisting and Blacklisting
