@@ -36,4 +36,3 @@ their README.
 
 **code_lines.sh** counts the number of code lines of Typescript, Javascript, Kotlin and GraphQL.
 It uses the *cloc* program to do so (no need to install it, it is retrieved using *npx*).
-
