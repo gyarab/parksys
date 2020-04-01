@@ -5,18 +5,34 @@
 - License plate recognition
 - Creation of rules
   - Whitelisting and Blacklisting
-  - Limits
   - Fees
+  - Free hours
   - Changes according to date and time
 - Statistics
 
 ## Architecture
 
-- License Plate Recognition API
-- Backend Server
 - Frontend Web App
-- Mobile Scanner App
+- Backend Server
+- License Plate Recognition Server
+- Mobile app
 
-### License Plate Recognition API
+## Setup
 
-Custom solution would be a project in and of itself, so a project like https://github.com/openalpr/openalpr will be used. Since it is licensed under AGPLv3, its service shall be accessible through an API whose server code must be public that is what AGPLv3 mandates.
+```bash
+docker-compose up
+```
+
+After Docker builds the images and runs the containers open browser at
+http://localhost:8889.
+
+If you wish to know how to run the individual parts separately, read their
+README files.
+
+## Scripts
+
+**test_all.sh** runs all tests. The individual parts have to be set up according to
+their README.
+
+**code_lines.sh** counts the number of code lines of Typescript, Javascript, Kotlin and GraphQL.
+It uses the *cloc* program to do so (no need to install it, it is retrieved using *npx*).
