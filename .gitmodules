@@ -13,3 +13,6 @@
 [submodule "scanner"]
 	path = scanner
 	url = https://github.com/gyarab/parksys-scanner
+[submodule "doc"]
+	path = doc
+	url = git@github.com:gyarab/parksys-doc.git
